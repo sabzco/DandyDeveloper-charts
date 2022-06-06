@@ -457,7 +457,7 @@
         echo "Error: Could not resolve the announce ip for this pod."
         sleep 30
         identify_announce_ip
-    fi
+    done
 
     while true; do
         sleep {{ .Values.splitBrainDetection.interval }}
